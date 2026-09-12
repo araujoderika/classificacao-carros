@@ -3,7 +3,9 @@ from sklearn.neighbors import KNeighborsClassifier  # o "cérebro" que aprende
 from sklearn.model_selection import train_test_split  # separa exemplos pra estudar e pra testar
 
 # 1. Abrimos o álbum de figurinhas com os exemplos de carros
-carros = pd.read_csv("carros.csv")
+carros = pd.read_csv(
+    r"C:\Users\arauj\OneDrive\Desktop\Estudos Gerais\projetos-erika\projetos\1-classificacao-carros\carros.csv"
+)
 print("Aqui está o nosso álbum de carros:")
 print(carros)
 
@@ -31,9 +33,7 @@ print("A resposta certa era:", list(resposta_teste))
 
 # 7. Agora o mais legal: vamos inventar um carro novo e perguntar pro
 #    computador que tipo de carro ele acha que é!
-carro_misterioso = [[300, 250]]  # 300 cv de potência, 250 km/h de velocidade máxima
+carro_misterioso = [[450, 290]]  # 300 cv de potência, 250 km/h de velocidade máxima
 palpite = cerebro.predict(carro_misterioso)
 print(f"\n🔍 Carro misterioso (300cv, 250km/h) -> o computador acha que é: {palpite[0]}")
 
-# Experimente mudar os números do "carro_misterioso" lá em cima
-# e rodar de novo pra ver o que o computador responde! 🚀
