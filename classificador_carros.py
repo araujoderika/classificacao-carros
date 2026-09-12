@@ -1,7 +1,3 @@
-# 🏎️ Adivinhador de Carros
-# Esse programa aprende a adivinhar se um carro é SEDAN, SUV ou ESPORTIVO
-# só olhando a potência (força do motor) e a velocidade máxima dele.
-
 import pandas as pd  # ajuda a ler tabelas (como um Excel)
 from sklearn.neighbors import KNeighborsClassifier  # o "cérebro" que aprende
 from sklearn.model_selection import train_test_split  # separa exemplos pra estudar e pra testar
