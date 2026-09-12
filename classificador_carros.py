@@ -33,6 +33,6 @@ print("A resposta certa era:", list(resposta_teste))
 
 # 7. Agora o mais legal: vamos inventar um carro novo e perguntar pro
 #    computador que tipo de carro ele acha que é!
-carro_misterioso = [[401, 294]]  # 300 cv de potência, 250 km/h de velocidade máxima
+carro_misterioso = [[300, 250]]  # 300 cv de potência, 250 km/h de velocidade máxima
 palpite = cerebro.predict(carro_misterioso)
 print(f"\n🔍 Carro misterioso ({carro_misterioso[0][0]} cv, {carro_misterioso[0][1]} km/h) -> o computador acha que é: {palpite[0]}")
